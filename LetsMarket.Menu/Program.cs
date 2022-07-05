@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using LetsMarket.Menu;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 
 namespace LetsMarket.Menu4
@@ -7,6 +8,11 @@ namespace LetsMarket.Menu4
     {
         static void Main(string[] args)
         {
+            Arquivo.InicializarArquivos();
+            var todos = Arquivo.BuscarTodos<Funcionarios>();
+            var um = Arquivo.BuscarUm<Funcionarios>(1);
+
+
             Console.ResetColor();
             Console.Title = "Let's Store";
 
@@ -20,12 +26,8 @@ namespace LetsMarket.Menu4
             funcionarios.Add(new MenuItem("Cadastrar Funcionários", Funcionarios.CadastrarFuncionarios));
             funcionarios.Add(new MenuItem("Listar Funcionários", Funcionarios.ListarFuncionarios));
 
-            var submenu = new MenuItem("Submenu");
-            submenu.Add(new MenuItem("item do submenu"));
-
             menu.Add(produtos);
             menu.Add(funcionarios);
-            menu.Add(submenu);
 
             menu.Execute();
         }
