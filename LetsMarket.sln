@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetsMarket", "LetsMarket\LetsMarket.csproj", "{4B33A9A0-267F-45CC-BF9F-3ED5CE4A8851}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetsMarket.Presentation", "LetsMarket.Presentation\LetsMarket.Presentation.csproj", "{4B33A9A0-267F-45CC-BF9F-3ED5CE4A8851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsMarket.Menu", "LetsMarket.Menu\LetsMarket.Menu.csproj", "{7121F7ED-2B2C-41BA-9B0C-C92A4C17991D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetsMarket.Menu", "LetsMarket.Menu\LetsMarket.Menu.csproj", "{7121F7ED-2B2C-41BA-9B0C-C92A4C17991D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsMarket.Domain", "LetsMarket.Domain\LetsMarket.Domain.csproj", "{09C13754-0378-4F6F-ADC1-80CDA9C08503}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7121F7ED-2B2C-41BA-9B0C-C92A4C17991D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7121F7ED-2B2C-41BA-9B0C-C92A4C17991D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7121F7ED-2B2C-41BA-9B0C-C92A4C17991D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C13754-0378-4F6F-ADC1-80CDA9C08503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C13754-0378-4F6F-ADC1-80CDA9C08503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C13754-0378-4F6F-ADC1-80CDA9C08503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C13754-0378-4F6F-ADC1-80CDA9C08503}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
