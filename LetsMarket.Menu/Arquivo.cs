@@ -63,5 +63,14 @@ namespace LetsMarket.Menu
 
             return (itens as List<T>)!.FirstOrDefault(it => it.Id == id);
         }
+
+        public static Funcionarios? BuscarFuncionario(string login, string senha)
+        {
+            var itens = LerArquivo<Funcionarios>();
+            var funcionario = (itens as List<Funcionarios>)!
+                .FirstOrDefault(f => f.Login == login && f.Senha == senha);
+
+            return funcionario;
+        }
     }
 }

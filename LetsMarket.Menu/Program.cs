@@ -9,8 +9,14 @@ namespace LetsMarket.Menu4
         static void Main(string[] args)
         {
             Arquivo.InicializarArquivos();
-            var todos = Arquivo.BuscarTodos<Funcionarios>();
-            var um = Arquivo.BuscarUm<Funcionarios>(1);
+
+            int idUsuario;
+
+            do
+            {
+                idUsuario = Login.Entrar();
+            }
+            while (idUsuario < 0);
 
 
             Console.ResetColor();
